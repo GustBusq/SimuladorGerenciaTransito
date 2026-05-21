@@ -1,0 +1,3 @@
+﻿Onibus: 001, Capacidade: 25, Status: EmMovimento
+Onibus: 003, Capacidade: 28, Status: EmMovimento
+Onibus: 004, Capacidade: 22, Status: EmMovimento
