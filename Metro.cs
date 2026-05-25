@@ -1,21 +1,17 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace GerenciaTransito;
 
-enum StatusVeiculo
-{
-    EmMovimento,
-    Parado,
-    Manutencao
-}
-
-internal class Onibus: IVeiculo
+internal class Metro: IVeiculo
 {
     public string NumeroDaLinha { get; private set; }
     public StatusVeiculo Status { get; private set; }
     public int VelocidadeAtual { get; private set; }
     public int Capacidade { get; private set; }
 
-    public Onibus(string numeroDaLinha,int capacidade )
+    public Metro(string numeroDaLinha, int capacidade)
     {
         NumeroDaLinha = numeroDaLinha;
         Status = StatusVeiculo.Parado;
@@ -25,6 +21,6 @@ internal class Onibus: IVeiculo
     public void MudarStatus(StatusVeiculo novoStatus)
     {
         Status = novoStatus;
-        Console.WriteLine($"Novo status do Onibus: {Status}");
+        Console.WriteLine($"Novo status do Metro: {Status}");
     }
 }
