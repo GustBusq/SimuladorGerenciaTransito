@@ -10,6 +10,7 @@ enum StatusVeiculo
 
 internal class Onibus: IVeiculo
 {
+    public int id { get; private set; }
     public string NumeroDaLinha { get; private set; }
     public StatusVeiculo Status { get; private set; }
     public int VelocidadeAtual { get; private set; }
