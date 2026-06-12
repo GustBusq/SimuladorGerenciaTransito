@@ -8,6 +8,7 @@ internal class TransitoContext : DbContext
     public DbSet<Onibus> Onibus { get; set; }
 
     // E outra tabela chamada 'Metros' baseada na classe Metro
+    // Mude de public DbSet<Metro> Metro para:
     public DbSet<Metro> Metros { get; set; }
 
     // Este método serve para configurar ONDE e COMO o banco vai funcionar
